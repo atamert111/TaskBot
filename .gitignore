@@ -1,0 +1,12 @@
+# Sanal ortam
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Veritabanı
+tasks.db
+
+# IDE ayar dosyaları
+*.DS_Store
