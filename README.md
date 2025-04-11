@@ -21,6 +21,20 @@ Bu proje, hem Discord bot geliştirme pratiği yapmak hem de yazılım testleri 
 - Gereksinimleri yükle:  
   `pip install -r requirements.txt`
 
+- `.env` adında bir dosya oluştur
+
+- Dosyanın içine aşağıdaki satırı ekle:
+  ```env
+  DISCORD_BOT_TOKEN=buraya_tokenını_yaz
+  Örnek:
+  DISCORD_BOT_TOKEN=MTM2MDMzMzg4MDkzODQ2NzQ2NA.XYZ123.abcABC
+
+ **Not:** `bot.py` içinde token şu şekilde kullanılmaktadır:
+
+ ```python
+ bot.run(os.getenv("DISCORD_BOT_TOKEN"))
+ ```
+
 - Görevleri test et:  
   `python run_tests.py`  
 
